@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 33px 9%;
+  background: transparent;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  margin-left: 200px;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  color: white;
+  margin-left: 60px;
+  font-size: 15px;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: all .55s ease;
+}
+
+.navbar a:hover {
+  border-bottom: 2px solid white;
+}
+
+.catalog {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(#914FE5, #7F8A04);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+
+.search-bar {
+  display: flex;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.search-bar input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #ccc;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #914FE5;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #7F8A04;
+}
+
+.filter {
+  margin-bottom: 20px;
+}
+
+.filter select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.catalog-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.item-card {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 300px;
+}
+
+.item-card h3 {
+  margin: 10px 0;
+  margin-top: auto;
+}
+
+.item-card p {
+  margin: 10px 0;
+  margin-top: auto;
+}
+
+.item-card .price {
+  margin-top: auto;
+  font-weight: bold;
+}
+
+.item-card button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #914FE5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.item-card button:hover {
+  background-color: #7F8A04;
+}
+.item-card.hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.item-card {
+  transition: transform 0.3s ease;
+}

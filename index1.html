@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reviews</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+  <header>
+    <a href="./index.html" class="logo">LTC</a>
+    <ul class="navbar">
+      <li><a href="./index.html">HOME</a></li>
+      <li><a href="./index2.html">CATALOG</a></li>
+      <li><a href="./index1.html">REVIEWS</a></li>
+    </ul>
+  </header>
+  <section class="reviews">
+    <div class="slider">
+      <div class="slide" id="slide1">
+        <p>"Great site! Found everything I needed. Highly recommend!" - John</p>
+        <p>Course: Web Development</p>
+        <p>Rating: ★★★★★</p>
+      </div>
+      <div class="slide" id="slide2">
+        <p>"The information is nicely presented, but it all depends on your practice!." - Mary</p>
+        <p>Course: Interface Design</p>
+        <p>Rating: ★★★★☆</p>
+      </div>
+      <div class="slide" id="slide3">
+        <p>"I completed the course and got hired! Cool teachers and atmosphere." - Alex</p>
+        <p>Course: Marketing</p>
+        <p>Rating: ★★★★★</p>
+      </div>
+      <div class="slide" id="slide4">
+        <p>"Prices are lower than competitors, and the quality is top-notch." - Olivia</p>
+        <p>Course: Data Analysis</p>
+        <p>Rating: ★★★★☆</p>
+      </div>
+    </div>
+    <form class="review-form" id="reviewForm">
+      <h2>Add a Review</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="course">Course:</label>
+      <select id="course" name="course" required>
+        <option value="Web Development">Web Development</option>
+        <option value="Interface Design">Interface Design</option>
+        <option value="Marketing">Marketing</option>
+        <option value="Data Analysis">Data Analysis</option>
+        <option value="C-Programmer">C-Programmer</option>
+      </select>
+
+      <label for="rating">Rating:</label>
+      <select id="rating" name="rating" required>
+        <option value="5">★★★★★</option>
+        <option value="4">★★★★☆</option>
+        <option value="3">★★★☆☆</option>
+        <option value="2">★★☆☆☆</option>
+        <option value="1">★☆☆☆☆</option>
+      </select>
+
+      <label for="review">Review:</label>
+      <textarea id="review" name="review" rows="4" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+  <script src="script3.js"></script>
+</body>
+
+</html>

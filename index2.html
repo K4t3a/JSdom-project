@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalog</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+<header>
+  <a href="./index.html" class="logo">LTC</a>
+  <ul class="navbar">
+    <li><a href="./index.html">HOME</a></li>
+    <li><a href="./index2.html">CATALOG</a></li>
+    <li><a href="./index1.html">REVIEWS</a></li>
+  </ul>
+</header>
+  <section class="catalog">
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search...">
+      <button onclick="searchCatalog()">Search</button>
+    </div>
+    <div class="filter">
+      <label for="category">Category:</label>
+      <select id="category" onchange="filterCatalog()">
+        <option value="all">All</option>
+        <option value="front">Frontend Development</option>
+        <option value="back">Backend Development</option>
+        <option value="design">Design</option>
+        <option value="programmer">C-Programmer</option>
+        <option value="data">Data Analysis</option>
+      </select>
+    </div>
+    <div class="catalog-items">
+      <div class="item-card">
+        <h3>Frontend Development</h3>
+        <p>HTML5, JavaScript, CSS, React, Angular</p>
+        <p class="price">Price: $200</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="item-card">
+        <h3>Backend Development</h3>
+        <p>NodeJS, GO, Python, Ruby, Java</p>
+        <p class="price">Price: $220</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="item-card">
+        <h3>C-Programmer</h3>
+        <p>C, C++, C#</p>
+        <p class="price">Price: $180</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="item-card">
+        <h3>Data Analysis</h3>
+        <p>Ruby, Rust, SQL</p>
+        <p class="price">Price: $190</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="item-card">
+        <h3>Interface Design</h3>
+        <p>Photoshop,Figma</p>
+        <p class="price">Price: $180</p>
+        <button>Add to Cart</button>
+      </div>
+      
+    </div>
+  </section>
+  <script src="script1.js"></script>
+</body>
+
+</html>

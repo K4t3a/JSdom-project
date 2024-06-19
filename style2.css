@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 33px 9%;
+  background: transparent;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  margin-left: 200px;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  color: white;
+  margin-left: 60px;
+  font-size: 15px;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: all .55s ease;
+}
+
+.navbar a:hover {
+  border-bottom: 2px solid white;
+}
+
+.reviews {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(#19B4D7, #0B1780);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+.slider {
+  width: 60%;
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 15px;
+  margin-bottom: 50px;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  transition: top 0.5s ease-in-out, transform 0.3s ease;
+  text-align: center;
+  padding: 20px;
+}
+
+.slide.active {
+  top: 0;
+}
+
+.slide.inactive {
+  top: -100%;
+}
+
+.slide p {
+  margin: 10px 0;
+}
+
+.slide p:last-child {
+  font-size: 24px;
+  color: #ffcc00;
+}
+
+.review-form {
+  width: 60%;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.review-form h2 {
+  margin-bottom: 20px;
+}
+
+.review-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.review-form label {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.review-form input,
+.review-form select,
+.review-form textarea {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.review-form button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background: #19B4D7;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.review-form button:hover {
+  background: #0B1780;
+}
+
+/* Animation for hover effect */
+.slide.hover {
+  transform: scale(1.05);
+}
